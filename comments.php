@@ -3,12 +3,14 @@
         if(!have_comments()){
            echo  "<p>Leave a Comment</p>";
 
-        }else {
-            echo get_comments_count(). " Comments";
+        }
+        else {
+            echo get_comments_number(). " Comments";
         }
     ?>
 
   <?php
+
     wp_list_comments(
         array(
             'avatar_size' => 120,

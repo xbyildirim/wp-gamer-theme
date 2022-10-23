@@ -2,7 +2,10 @@
  <div class="game-details">
             <div class="row">
               <div class="col-lg-12">
-                <h2><?php echo get_the_title() ?><br/><p><?php  the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>', '</span>') ?></p> <p><span><a href="#comments"><i class="fa fa-comment comment"></i><?php comments_number(); ?></a></span></p></h2>
+                <h2><?php echo get_the_title() ?>
+                <br/><p>
+                    <?php  the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>', '</span>') ?></p> 
+                    <p><span><a href="#comments"><i class="fa fa-comment comment"></i><?php comments_number(); ?></a></span></p></h2>
                 
               </div>
               <div class="col-lg-12">

@@ -50,6 +50,15 @@ figure, header, nav, section, article, aside, footer, figcaption {
   height: 0;
 }
 
+.tag{
+  /* float:left; */
+  padding: 10px;
+}
+
+.comment{
+  padding: 10px;
+}
+
 .clearfix {
   display: inline-block;
 }

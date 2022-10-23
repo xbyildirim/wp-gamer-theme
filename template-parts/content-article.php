@@ -2,7 +2,8 @@
  <div class="game-details">
             <div class="row">
               <div class="col-lg-12">
-                <h2><?php echo get_the_title() ?></h2>
+                <h2><?php echo get_the_title() ?><br/><p><?php  the_tags('<span class="tag"><i class="fa fa-tag"></i>', '</span><span class="tag"><i class="fa fa-tag"></i>', '</span>') ?></p> <p><span><a href="#comments"><i class="fa fa-comment comment"></i><?php comments_number(); ?></a></span></p></h2>
+                
               </div>
               <div class="col-lg-12">
                 <div class="content">
@@ -47,15 +48,20 @@
                     
                     
                     </div>
+                    <hr />
+                    <?php
+                          comments_template();
+                      ?>
+                    <hr />
                     <div class="row">
                         <div class="col-md-6">
                         <div class="main-border-button">
-                            <a href="#">XBYİLDİRİM GİTHUB</a>
+                            <a href="https://github.com/xbyildirim" target="_blank" style="background-color:green !important; color: white; font-size:20px">My Github</a>
                         </div>
                         </div>
                         <div class="col-md-6">
                         <div class="main-border-button">
-                            <a href="<?php echo  site_url() ?>">Go Home</a>
+                            <a href="<?php echo  site_url() ?>" style="font-size:20px">Go Home</a>
                         </div>
                         </div>
                     </div>
@@ -65,3 +71,4 @@
             </div>
           </div>
           <!-- ***** Details End ***** -->
+   
